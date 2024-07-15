@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <!-- <form>태그: 데이터를 담아서 전송하는 택배상자와 같은 역할(반드시 사용)
+         - action: 데이터를 전송할 주소
+         - method: 데이터를 전송하는 방식(post-숨김, get-노출) 
+         -->
+      <form action="/login" method="post">
+         <!-- <fieldset>태그: <form> 태그 안에서 영역을 지정한다. 
+            <fieldset>, <legend> 태그는 세트
+            <fieldset> 태그는 필수요소 X
+            <legend>태그는 필수요소 X -->
+         <fieldset>
+            <legend>로그인</legend>
+            <!-- <label>, <input>태그(사용자가 입력할때)는 세트로 같이 사용한다. -->
+            <!-- <label>태그: input 태그에 어떤걸 입력해야 하는지 나타냄  
+               - for 속성: 해당 label 태그가 어떤 input태그를 가르키는지 나타낸다. input태그의 id를 속성값으로 사용
+               -->
+            <!-- <input>태그: 사용자로부터 입력받는 태그  
+               - id 속성: 태그를 구분하기 위해 사용(모든 태그에 사용가능), 속성값은 직접 지어주면 되지만 중복 X
+            -->
+
+            <label for="user_id">아이디:</label>
+            <input type="text" id="user_id" size="10" maxlength="10" value="test" />
+            <label for="user_pw">비밀번호:</label>
+            <input type="password" id="user_pw" size="10" maxlength="10" value="12345" />
+            <input type="submit" value="로그인" />
+         </fieldset>
+         <!-- <fieldset>
+            <legend>회원가입</legend>
+         </fieldset> -->
+      </form>
+   </body>
+</html>

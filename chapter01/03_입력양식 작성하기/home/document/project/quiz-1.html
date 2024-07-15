@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <img src="snoopy.jpeg" alt="스누피" />
+
+      <!-- 상대경로(현재 디렉토리): 내가 작업하고 있는 파일의 디렉토리 안에 있는 모든 파일, 폴더를 가져올 수 있다 -->
+      <img src="./snoopy.jpeg" alt="스누피" />
+
+      <!-- 각자 가져온 이미지를 상대경로(현재 디렉토리)를 이용해 출력 -->
+      <img src="./jeju.jpg" alt="바다" />
+
+      <img src="./images/snoopy.jpeg" alt="스누피" />
+
+      <!-- 상대경로(상위 디렉토리): 내가 현재 작업하고 있는 파일이 있는 폴더의 상위 디렉토리에 있는 모든 폴더, 파일을 가져올 수 있다. -->
+      <!-- 쉽게 생각해서 '../' = '이전버튼 한번' -->
+      <img src="../snoopy.jpeg" alt="스누피" />
+      <img src="../../snoopy.jpeg" alt="스누피" />
+
+      <!-- document 폴더에 있는 이미지 -->
+      <img src="../jeju.jpg" alt="바다" />
+
+      <!-- home폴더에 있는 이미지 -->
+      <img src="../../jeju.jpg" alt="바다" />
+   </body>
+</html>
