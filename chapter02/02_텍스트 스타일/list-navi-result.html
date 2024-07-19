@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            /* a태그의 디폴트 디자인을 바꿈 */
+            text-decoration: none;
+            color: black;
+        }
+
+        ul {
+            /* 불릿 없앰 */
+            /* list-style-type: none; */
+            list-style: none;
+            /* width: 300px; */ /* 세로메뉴 만들때 지정 */
+            width: 900px; /* 가로메뉴 만들때 지정 */
+            display: flex; /* 가로메뉴 만들때 지정 */
+        }
+
+        li {
+            border: 1px solid black;
+            margin: 5px; /* 외부여백 */
+            padding: 20px; /* 내부여백 */
+            width: 150px; /* 가로메뉴 만들때 지정 */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="http://www.easyspub.co.kr/11_Menu/CompanyInfo/PUB">회사소개</a></li>
+        <li><a href="http://www.easyspub.co.kr/20_Menu/BookList/PUB">도서</a></li>
+        <li><a href="http://www.easyspub.co.kr/30_Menu/DataList/PUB">자료실</a></li>
+        <li><a href="http://www.easyspub.co.kr/50_Menu/VideoList/PUB">동영상 강의</a></li>
+    </ul>
+</body>
+</html>
