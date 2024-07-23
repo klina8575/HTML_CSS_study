@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grand {
+            position: relative;
+            top: 100px;
+            width: 800px;
+            height: 400px;
+            background-color: yellow;
+        }
+
+        .parent {
+            position: relative;
+            top: 100px;
+            width: 400px;
+            height: 200px;
+            background: royalblue;
+        } 
+
+        .child1 {
+            position: absolute;
+            top: 80px;
+            right: 150px;
+            width: 200px;
+            height: 100px;
+            background: salmon;
+        }
+
+        .child2 {
+            position: absolute;
+            top: 80px;
+            right: 100px;
+            width: 200px;
+            height: 100px;
+            background: rgb(170, 245, 152);
+        }
+    </style>
+</head>
+<body>
+    <!-- 바로 위의 부모태그에 position:relative가 존재하지 않는다면 
+     그 위의 부모를 기준으로 삼는다(단, 해당 부모태그가 position:relative 일 경우) -->
+    <div class="grand">
+        <div class="parent">
+            <div class="child1">1</div>
+            <div class="child2">2</div>
+        </div>
+    </div>
+</body>
+</html>
